@@ -1,0 +1,13 @@
+[package]
+name = "ipfs_app_data"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+futures = "0.3"
+hex = "0.4"
+multibase = "0.9"
+reqwest = { version = "0.11", default-features = false, features = ["rustls-tls"] }
+tokio = { version = "1.29", features = ["full"] }
+tokio-postgres = "0.7"
